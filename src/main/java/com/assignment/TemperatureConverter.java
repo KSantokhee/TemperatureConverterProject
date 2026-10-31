@@ -21,9 +21,9 @@ public class TemperatureConverter {
         TemperatureConverter converter = new TemperatureConverter();
         //Implementation of menu based user interface
         System.out.println("=== Temperature Converter ===");
-        System.out.println("1. Fahrenheit to Celsius");
-        System.out.println("2. Celsius to Fahrenheit");
         System.out.println("3. Celsius to Kelvin");
+        System.out.println("2. Celsius to Fahrenheit");
+        System.out.println("1. Fahrenheit to Celsius");
         System.out.print("Choose an option (1-3): ");
 
         int choice = scanner.nextInt();
