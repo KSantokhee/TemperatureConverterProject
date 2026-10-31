@@ -7,13 +7,19 @@ public class TemperatureConverterTest {
 
     @Test
     public void testCelsiusToFahrenheit() {
-        // Arrange
         TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(32.0, converter.celsiusToFahrenheit(0.0), 0.001);
+    }
 
-        // Act - Testing 0°C to Fahrenheit (should be 32°F)
-        double result = converter.celsiusToFahrenheit(0.0);
+    @Test
+    public void testFahrenheitToCelsius() {
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(0.0, converter.fahrenheitToCelsius(32.0), 0.001);
+    }
 
-        // Assert
-        assertEquals(32.0, result, 0.001, "Freezing point of water should convert to 32.0°F");
+    @Test
+    public void testCelsiusToKelvin() {
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(273.15, converter.celsiusToKelvin(0.0), 0.001);
     }
 }
